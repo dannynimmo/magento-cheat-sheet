@@ -62,6 +62,15 @@ Insert template file - usage: `$this->getChildHtml('relevant_name')`
 <block type="core/template" name="relevant_name" template="page/html/template_file.phtml" />
 ```
 
+Add address fields to customer signup form
+```xml
+<customer_account_create>
+    <reference name="customer_form_register">
+        <action method="setShowAddressFields"><param>true</param></action>
+    </reference>
+</customer_account_create>
+```
+
 Frontend template file snippets
 -------------------------------
 
